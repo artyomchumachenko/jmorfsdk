@@ -22,6 +22,11 @@ final class JMorfSdkImpl implements JMorfSdk {
 
 	private Map<Integer, List<Form>> allForms = new ConcurrentHashMap<>();
 
+	@Override
+	public Map<Integer, List<Form>> getAllForms() {
+		return allForms;
+	}
+
 	JMorfSdkImpl() {
 	}
 

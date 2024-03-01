@@ -40,6 +40,7 @@ package ru.textanalysis.tawt.jmorfsdk;
 import ru.textanalysis.tawt.ms.model.jmorfsdk.Form;
 
 import java.util.List;
+import java.util.Map;
 
 public interface JMorfSdk {
 
@@ -67,6 +68,8 @@ public interface JMorfSdk {
 	List<String> getDerivativeFormLiterals(String stringInitialForm, byte typeOfSpeech, long morfCharacteristics);
 
 	List<Form> getOmoForms(String literal);
+
+	Map<Integer, List<Form>> getAllForms();
 
 	void finish();
 }
